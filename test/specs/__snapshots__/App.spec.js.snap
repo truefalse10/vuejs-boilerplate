@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App.vue matches snapshot 1`] = `
+<div id="app">
+    <h1>Hello Vuejs</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis repellat quaerat, ut, incidunt culpa repudiandae accusamus dolorem obcaecati error corrupti vero, eveniet qui explicabo laborum possimus. Maiores minus molestias provident!</p>
+    <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+    </ul>
+</div>
+`;

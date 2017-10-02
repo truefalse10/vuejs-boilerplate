@@ -11,8 +11,19 @@
   "plugins": ["transform-runtime"],
   "env": {
     "test": {
-      "presets": ["env", "stage-2"],
-      "plugins": ["istanbul"]
+      "presets": [
+        "env",
+        "stage-2"
+      ],
+      "plugins": [
+        "transform-es2015-modules-commonjs",
+        ["module-resolver", {
+          "root": ["./src"],
+          "alias": {
+            "@": "./src"
+          }
+        }]
+      ]
     }
   }
 }
