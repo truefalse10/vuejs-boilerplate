@@ -102,6 +102,7 @@
     "collectCoverageFrom": [
       "src/**/*.js",
       "src/**/*.vue",
+      "!src/main.js",
       "!test/**"
     ],
     "globals": {
