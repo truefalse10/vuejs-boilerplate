@@ -1,5 +1,6 @@
 import {
   shallow,
+  mount,
 } from 'vue-test-utils';
 import List from '@/App';
 import {
@@ -18,7 +19,7 @@ describe('App.vue', () => {
   it('matches snapshot', () => {
     const items = ['item 1', 'item 2'];
     const renderer = createRenderer();
-    const wrapper = shallow(List, {
+    const wrapper = mount(List, {
       propsData: { items },
     });
     renderer.renderToString(wrapper.vm, (err, str) => {

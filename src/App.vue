@@ -5,12 +5,18 @@
     <ul>
       <li v-for="(item, index) in items" :key="index">{{ item }}</li>
     </ul>
+    <hello/>
   </div>
 </template>
 
 <script>
+import Hello from './components/Hello';
+
 export default {
   name: 'app',
+  components: {
+    Hello,
+  },
   props: {
     items: Array,
   },
