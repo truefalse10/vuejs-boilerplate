@@ -1,11 +1,11 @@
 import {
   shallow,
-  mount,
 } from 'vue-test-utils';
-import List from '@/App';
 import {
   createRenderer,
 } from 'vue-server-renderer';
+
+import List from '@/App';
 
 describe('App.vue', () => {
   it('renders li for each item in props.items', () => {
@@ -19,7 +19,7 @@ describe('App.vue', () => {
   it('matches snapshot', () => {
     const items = ['item 1', 'item 2'];
     const renderer = createRenderer();
-    const wrapper = mount(List, {
+    const wrapper = shallow(List, {
       propsData: { items },
     });
     renderer.renderToString(wrapper.vm, (err, str) => {

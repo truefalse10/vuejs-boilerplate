@@ -73,6 +73,7 @@
     "vue-template-compiler": "^2.5.2",
     "vue-template-es2015-compiler": "^1.6.0",
     "vue-test-utils": "^1.0.0-beta.3",
+    "vuex": "^3.0.0",
     "webpack": "^3.8.1",
     "webpack-bundle-analyzer": "^2.9.0",
     "webpack-dev-middleware": "^1.12.0",
