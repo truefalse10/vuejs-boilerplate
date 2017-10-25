@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import ComponentWithStore from './components/ComponentWithStore';
+import ComponentWithStore from '@/components/ComponentWithStore';
 
 export default {
   name: 'app',

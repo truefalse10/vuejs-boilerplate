@@ -12,17 +12,8 @@
   "env": {
     "test": {
       "presets": [
-        "env",
+        ["env", { "targets": { "node": "current" }}],
         "stage-2"
-      ],
-      "plugins": [
-        "transform-es2015-modules-commonjs",
-        ["module-resolver", {
-          "root": ["./src"],
-          "alias": {
-            "@": "./src"
-          }
-        }]
       ]
     }
   }
