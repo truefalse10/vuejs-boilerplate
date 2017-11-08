@@ -19,7 +19,7 @@
     "build": "node build/build.js",
     "lint": "eslint --ext .js,.vue src, test",
     "fix": "eslint --fix --ext .js,.vue src, test",
-    "test": "jest --coverage"
+    "test": "npm run lint && jest --coverage"
   },
   "dependencies": {
     "vue": "^2.5.2"
@@ -59,6 +59,8 @@
     "opn": "^5.1.0",
     "optimize-css-assets-webpack-plugin": "^2.0.0",
     "ora": "^1.2.0",
+    "prettier": "^1.8.1",
+    "prettier-eslint-cli": "^4.4.0",
     "rimraf": "^2.6.0",
     "sass-loader": "^6.0.6",
     "semver": "^5.3.0",
@@ -94,7 +96,7 @@
       "vue"
     ],
     "transform": {
-      "^.+\\.js$": "<rootDir>/node_modules/babel-jest",
+      "^.+\\.js$": "babel-jest",
       ".*\\.(vue)$": "<rootDir>/node_modules/vue-jest"
     },
     "moduleNameMapper": {

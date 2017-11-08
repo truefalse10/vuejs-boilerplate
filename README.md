@@ -10,6 +10,27 @@
 * eslint (based on airbnb)
 * sass-loader
 * dockerfile
+* [prettier](https://prettier.io/) (automatic code formatter)
+
+## Enable prettier in vscode
+prettier is a  opiniated code formatter that automatically formats your .js and .vue files on document save. To enable this feature in vscode do:
+
+* install plugins `vetur`, `prettier`, `eslint`
+* add to your vscode settings:
+```javascript
+"emmet.syntaxProfiles": {
+  "vue-html": "html"
+},
+"emmet.includeLanguages": {
+  "vue-html": "html"
+},
+"eslint.validate": [
+  "javascript",
+  "vue"
+],
+"editor.formatOnSave": true,
+"prettier.eslintIntegration": true,
+```
 
 
 ## Build Setup
