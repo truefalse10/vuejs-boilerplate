@@ -1,9 +1,17 @@
 <template>
   <div id="app">
     <h1>{{ message }}</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis repellat quaerat, ut, incidunt culpa repudiandae accusamus dolorem obcaecati error corrupti vero, eveniet qui explicabo laborum possimus. Maiores minus molestias provident!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis repellat quaerat,
+    ut, incidunt culpa repudiandae accusamus dolorem obcaecati error corrupti vero, eveniet qui
+    explicabo laborum possimus.
+    Maiores minus molestias provident!</p>
     <ul>
-      <li v-for="(item, index) in items" :key="index">{{ item }}</li>
+      <li
+        v-for="(item, index) in items"
+        :key="index"
+      >
+        {{ item }}
+      </li>
     </ul>
     <component-with-store/>
   </div>
@@ -13,12 +21,15 @@
 import ComponentWithStore from '@/components/ComponentWithStore';
 
 export default {
-  name: 'app',
+  name: 'App',
   components: {
     ComponentWithStore,
   },
   props: {
-    items: Array,
+    items: {
+      type: Array,
+      default: () => [],
+    },
   },
   data() {
     return {
