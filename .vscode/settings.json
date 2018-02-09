@@ -1,0 +1,16 @@
+{
+  "vetur.validation.template": true,
+  "prettier.eslintIntegration": true,
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    {
+      "language": "vue",
+      "autoFix": true
+    },
+    {
+      "language": "html",
+      "autoFix": true
+    }
+  ]
+}
