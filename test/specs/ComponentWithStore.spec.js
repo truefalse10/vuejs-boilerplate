@@ -1,9 +1,5 @@
-import {
-  shallow,
-} from 'vue-test-utils';
-import {
-  createRenderer,
-} from 'vue-server-renderer';
+import { shallow } from '@vue/test-utils';
+import { createRenderer } from 'vue-server-renderer';
 
 import store from '@/store';
 import ComponentWithStore from '@/components/ComponentWithStore';
