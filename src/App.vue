@@ -1,17 +1,13 @@
 <template>
   <div id="app">
+    <img src="./assets/logo.png">
     <h1>{{ message }}</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis repellat quaerat,
-    ut, incidunt culpa repudiandae accusamus dolorem obcaecati error corrupti vero, eveniet qui
-    explicabo laborum possimus.
-    Maiores minus molestias provident!</p>
+    <!-- eslint-disable-next-line -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis repellat quaerat, ut, incidunt culpa repudiandae accusamus dolorem obcaecati error corrupti vero, eveniet qui explicabo laborum possimus. Maiores minus molestias provident!</p>
     <ul>
       <li
         v-for="(item, index) in items"
-        :key="index"
-      >
-        {{ item }}
-      </li>
+        :key="index">{{ item }}</li>
     </ul>
     <component-with-store/>
   </div>
@@ -34,6 +30,7 @@ export default {
   data() {
     return {
       message: 'Hello Vuejs',
+      secret: process.env.VUE_APP_SECRET,
     };
   },
 };
