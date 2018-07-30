@@ -11,6 +11,6 @@ module.exports = {
   snapshotSerializers: ['jest-serializer-vue'],
   testMatch: ['**/tests/unit/**/*.spec.(js|jsx|ts|tsx)|**/__tests__/*.(js|jsx|ts|tsx)'],
   testURL: 'http://localhost/',
-  collectCoverageFrom: ['src/*.js'],
+  collectCoverageFrom: ['src/**/*.js', 'src/**/*.vue', '!src/main.js'],
   coverageReporters: ['json', 'lcov', 'text', 'text-summary'],
 };

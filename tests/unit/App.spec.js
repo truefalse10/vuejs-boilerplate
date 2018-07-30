@@ -10,4 +10,8 @@ describe('App.vue', () => {
     });
     expect(wrapper.findAll('li')).toHaveLength(items.length);
   });
+  it('renders no li if props.items empty', () => {
+    const wrapper = shallowMount(List, {});
+    expect(wrapper.findAll('li')).toHaveLength(0);
+  });
 });
